@@ -10,7 +10,6 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Interpolator;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
@@ -29,7 +28,10 @@ import java.lang.reflect.Field;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import static com.hkm.slider.SliderLayout.PresentationConfig.*;
+import static com.hkm.slider.SliderLayout.PresentationConfig.Dots;
+import static com.hkm.slider.SliderLayout.PresentationConfig.Numbers;
+import static com.hkm.slider.SliderLayout.PresentationConfig.Smart;
+import static com.hkm.slider.SliderLayout.PresentationConfig.byVal;
 
 /**
  * SliderLayout is compound layout. This is combined with {@link com.hkm.slider.Indicators.PagerIndicator}
@@ -325,7 +327,6 @@ public class SliderLayout extends RelativeLayout {
 
                 break;
         }
-
     }
 
 
