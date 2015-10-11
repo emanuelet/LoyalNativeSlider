@@ -58,7 +58,7 @@ public class SliderLayout extends RelativeLayout {
     /**
      * InfiniteViewPager is extended from ViewPagerEx. As the name says, it can scroll without bounder.
      */
-    private InfiniteViewPager mViewPager;
+    private static InfiniteViewPager mViewPager;
     /**
      * multiViewPager
      */
@@ -387,7 +387,7 @@ public class SliderLayout extends RelativeLayout {
         mViewPager.beforeItem();
     }
 
-    private android.os.Handler mh = new android.os.Handler() {
+    private static android.os.Handler mh = new android.os.Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
